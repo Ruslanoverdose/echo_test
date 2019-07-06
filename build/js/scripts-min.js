@@ -1,1 +1,1 @@
-console.log("asd");
+$(function(){let s=!0;$(".eventsbar__arrow button").click(function(){s?($(".eventsbar__content").addClass("is_open").removeClass("is_close"),$(this).css({transform:"rotate(0deg)"}),$("body").css({"overflow-y":"scroll"})):($(".eventsbar__content").addClass("is_close").removeClass("is_open"),console.log("close"),$(this).css({transform:"rotate(180deg)"}),$("body").css({"overflow-y":"hidden"})),s=!s})});

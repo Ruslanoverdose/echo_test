@@ -1,80 +1,109 @@
 .eventsbar {
-    padding: 52px 10px 55px;
-    background: $eventsBack;
+  padding: 52px 10px 55px;
+  background: $eventsBack;
+  height: max-content;
+  &__wrapper {
+    position: relative;
+  }
+  .is_open {
+    opacity: 1;
     max-width: 320px;
-    height: max-content;
+    transition: 0.5s max-width, 1s opacity;
+  }
+  .is_close {
+    opacity: 0;
+    max-width: 20px;
+    transition: 0.5s max-width, 0.2s opacity;
+  }
+  &__content {
+    overflow: hidden;
+  }
+  &__title {
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 18px;
+  }
+  &__item {
+    position: relative;
+    margin-bottom: 8px;
+    &_date {
+      position: absolute;
+      background: $backDate;
+      top: 0;
+      right: 0;
+      font-family: "Roboto Condensed", sans-serif;
+      padding: 0 4.7px 0 7.7px;
+      text-align: right;
+    }
+    &_daymonth {
+      font-size: 14px;
+      color: #fff;
+      font-weight: bold;
+    }
+    &_dayweek {
+      color: #cf4f1b;
+      font-size: 10px;
+    }
+    &_bottom {
+      position: absolute;
+      bottom: 0%;
+      left: 0;
+      padding: 0 0 9.2px 11.7px;
+    }
+    &_title {
+      color: #fff;
+      font-weight: bold;
+    }
+    &_subtitle {
+      color: #fff;
+    }
+    &_pic {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: linear-gradient(
+          rgba(#000, 0) 0%,
+          rgba(#000, 1) 100% to bottom
+        );
+      }
+    }
+    &_title {
+      position: relative;
+      font-size: 16px;
+      font-family: "Roboto Condensed", sans-serif;
+      font-weight: bold;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: url("../../images/arrow_orange.png");
+        width: 100%;
+        height: 12px;
+      }
+    }
+    &_subtitle {
+      font-size: 12px;
+      font-family: "Roboto Condensed", sans-serif;
+      font-weight: 400;
+    }
+  }
+  &__arrow {
     position: absolute;
-    left: 246px;
-    &__title {
-        color: #fff;
-        font-weight: bold;
-        margin-bottom: 18px;
+    top: 0%;
+    right: 0;
+    button {
+      outline: none;
+      border: 0;
+      padding: 0;
+      background: transparent;
+      transition: 0.3s transform;
+      transform: rotate(-180deg);
     }
-    &__item {
-        position: relative;
-        margin-bottom: 8px;
-        &_date {
-            position: absolute;
-            background: $backDate;
-            top: 0;
-            right: 0;
-            font-family: "Roboto Condensed", sans-serif;  
-            padding: 0 4.7px 0 7.7px;
-            text-align: right;  
-        }
-        &_daymonth {
-            font-size: 14px;
-            color: #fff;
-            font-weight: bold;
-        }
-        &_dayweek {
-            color: #CF4F1B;
-            font-size: 10px;
-        }
-        &_bottom {
-            position: absolute;
-            bottom: 0%;
-            left: 0;
-            padding: 0 0 9.2px 11.7px;
-        }
-        &_title {
-            color: #fff;
-            font-weight: bold;
-        }
-        &_subtitle {
-            color: #fff;
-        }
-        &_pic {
-            position: relative;
-            &::after {
-                content: "";
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                left: 0;
-                top: 0;
-                background: linear-gradient(rgba(#000, 0) 0%, rgba(#000, 1) 100% to bottom);
-            }
-        }
-        &_title {
-            position: relative;
-            font-size: 16px;
-            font-family: "Roboto Condensed", sans-serif;  
-            font-weight: bold;
-            &::after {
-                content: "";
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                background: url("../../images/arrow_orange.png");
-                width: 100%;
-                height: 12px;
-            }
-        }
-        &_subtitle {
-            font-size: 12px;
-            font-family: "Roboto Condensed", sans-serif;  
-            font-weight: 400;
-        }
-    }
+  }
 }

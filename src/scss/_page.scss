@@ -1,22 +1,47 @@
-html,body,.main {
-    height: 100%;
+html,
+body,
+.main {
+  height: 100%;
+}
+html {
 }
 body {
-    overflow: hidden;
+  background: $background;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
-.main {
-    background: $background;
-    background-size: cover;
-    position: absolute;
-    left: 0;
+.content {
+  position: absolute;
+  left: 246px;
+  &__banner {
+    background: $eventsBack;
+    padding: 29px 28px 16px 26px;
+    position: fixed;
     top: 0;
     right: 0;
+  }
+  &__social {
+    position: fixed;
     bottom: 0;
-    overflow-y: scroll;
-}
-
-.wrapper {
+    right: 0;
     display: flex;
-    height: 100%;
- 
+    font-family: "Oswald", sans-serif;
+    li {
+      list-style: none;
+      margin-right: 38px;
+      color: #fff;
+      font-weight: 300;
+      font-size: 18px;
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+      }
+    }
+  }
+}
+.wrapper {
+  display: flex;
+  height: 100%;
 }
