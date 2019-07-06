@@ -1,0 +1,68 @@
+.sidebar {
+    font-family: "Oswald", sans-serif;
+    max-width: 246px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    position: fixed;
+    .top {
+        &__logo {
+            padding: 52px 39px 55px; 
+            position: relative;
+            &::after {
+                content: "";
+                background: url(../../images/arrow.svg) no-repeat;
+                width: 100%;
+                height: 10px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }    
+        }
+    }
+    .top__menu, .bottom__menu {
+        text-align: center;
+        .nav-item {
+            padding: 0;
+            .nav-link {
+                padding: 7px 0;
+                color: $sidebar_font;
+                text-decoration: none;
+                position: relative;
+                
+            }
+            .link-item {
+                position: relative;
+                &::after {
+                    content: "";
+                    background: url(../../images/arrow.svg) no-repeat;
+                    width: 100%;
+                    height: 10px;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                }   
+            }
+        }
+        .submenu {
+            .nav-link {
+                color: $border;
+                font-weight: 300;
+            }
+        }
+    }
+
+    .bottom {
+        &__menu {
+            .last-child {
+                padding: 0;
+            }
+            .link-img {
+                padding-top: 4px;
+                width: 100%;
+            }
+        }
+    }
+}

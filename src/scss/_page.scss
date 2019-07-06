@@ -1,4 +1,22 @@
+html,body,.main {
+    height: 100%;
+}
+body {
+    overflow: hidden;
+}
 .main {
     background: $background;
-    padding-bottom: 500px;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll;
+}
+
+.wrapper {
+    display: flex;
+    height: 100%;
+ 
 }

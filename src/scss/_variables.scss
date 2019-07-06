@@ -1,2 +1,8 @@
 $black: #5D5D5D;
-$background: rgba($black,.7), url(../../images/back.png);
+$black_2: #0F0E0E;
+$border: #6D6E70;
+$sidebar_font: #E5E6E7;
+$eventsBack: #121212;
+$backDate: #1C1C1C;
+$orange: #CF4F1B;
+$background: linear-gradient(rgba($black, .7) 0%, rgba($black_2, .7) 100%), url(../../images/back.png);
