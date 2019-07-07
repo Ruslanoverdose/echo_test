@@ -1,0 +1,34 @@
+.btn-map {
+  border: 0;
+  background: $black_4;
+  border-radius: 10px;
+  padding: 6px 12px;
+  font-family: $Roboto_C;
+  font-weight: bold;
+  color: $silver_2;
+  transition: 0.3s all;
+  span {
+    padding: 0 27px;
+  }
+  &:hover {
+    color: $black_4;
+    background: $silver_2;
+  }
+}
+.btn-clear {
+  border: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.btn-orange {
+  border-radius: 10px;
+  border: 0;
+  background: $orange;
+  color: #fff;
+  padding: 6px 12px;
+  font-family: $Roboto_C;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}

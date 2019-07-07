@@ -1,8 +1,17 @@
-$black: #5D5D5D;
-$black_2: #0F0E0E;
-$border: #6D6E70;
-$sidebar_font: #E5E6E7;
+$black: #5d5d5d;
+$black_2: #0f0e0e;
+$border: #6d6e70;
+$silverLight: #e5e6e7;
 $eventsBack: #121212;
-$backDate: #1C1C1C;
-$orange: #CF4F1B;
-$background: linear-gradient(rgba($black, .7) 0%, rgba($black_2, .7) 100%), url(../../images/back.png);
+$backDate: #1c1c1c;
+$orange: #cf4f1b;
+$silver: #b4b4b4;
+$black_3: #222;
+$silver_1: #707070;
+$black_4: #262626;
+$silver_2: #dedede;
+$FE: #fefefe;
+$background: linear-gradient(rgba($black, 0.7) 0%, rgba($black_2, 0.7) 100%),
+  url(../../images/back.png);
+
+$Roboto_C: "Roboto Condensed", sans-serif;

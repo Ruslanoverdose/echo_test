@@ -1,0 +1,108 @@
+.modal-custom {
+  .modal-content {
+    background-color: $black_3;
+    // border-color: $silver_1;
+    border-radius: 12px;
+    color: #fff;
+    .close {
+      color: #fff;
+      text-shadow: none;
+      opacity: 1 !important;
+      outline: none;
+      font-weight: 500;
+    }
+  }
+}
+
+.modalevent {
+  &__top {
+    display: flex;
+    font-family: $Roboto_C;
+    margin-bottom: 17px;
+  }
+  &__cover {
+    max-width: 291px;
+    img {
+      width: 100%;
+    }
+  }
+  &__inf {
+    margin-left: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__daymonth {
+    font-weight: bold;
+    font-size: 16px;
+    color: $silverLight;
+  }
+  &__dayweek {
+    color: $orange;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  &__title {
+    color: $silverLight;
+    font-size: 16px;
+    position: relative;
+    margin-bottom: 13px;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 293px;
+      height: 20px;
+      background: url("../../images/arrow_modal.png") no-repeat;
+    }
+  }
+  &__subtitle {
+    font-size: 12px;
+    text-decoration: underline;
+    a {
+      color: $silverLight;
+    }
+  }
+  &__content {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    line-height: 32px;
+    margin-bottom: 14px;
+  }
+  &__map {
+    font-size: 15px;
+    & > img {
+      margin-right: 11px;
+    }
+    a {
+      color: $orange;
+      text-decoration: underline;
+    }
+  }
+  &__more {
+    font-size: 15px;
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+}
+.modalpietura {
+  &__top {
+    font-family: $Roboto_C;
+    margin-bottom: 33px;
+    span {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+  &__content {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .modal-dialog-custom {
+    max-width: 624px;
+  }
+}

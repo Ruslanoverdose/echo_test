@@ -1,0 +1,119 @@
+.events {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    color: $silverLight;
+    font-weight: 300;
+    font-size: 34px;
+    margin-bottom: 25px;
+  }
+  &__gallery {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    padding-right: 12px;
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+  &__filter {
+    color: $silverLight;
+    font-size: 15px;
+    &__value {
+      list-style: none;
+      margin-bottom: 18px;
+      & > li {
+        display: inline-block;
+        button {
+          border: 0;
+          background: transparent;
+          color: $silverLight;
+        }
+      }
+    }
+    &__title {
+      font-weight: bold;
+    }
+    &__type {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 8px;
+        width: 600px;
+        height: 20px;
+        background: url("../../images/arrow_filter.png") no-repeat;
+        left: 15px;
+      }
+    }
+    &__type,
+    &__date {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .row_events {
+    margin: 0;
+  }
+  .cardcontainer {
+    padding-left: 0px;
+    padding-right: 12px;
+  }
+  .eventcard {
+    margin-bottom: 12px;
+    position: relative;
+    cursor: pointer;
+    &__cover {
+      position: relative;
+      img {
+        width: 100%;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: linear-gradient(
+          rgba(#000, 0) 0%,
+          rgba(#000, 1) 100% to bottom
+        );
+      }
+    }
+    &__date {
+      position: absolute;
+      background: $backDate;
+      top: 0;
+      right: 0;
+      font-family: $Roboto_C;
+      padding: 0 4.7px 0 7.7px;
+      text-align: right;
+    }
+    &__daymonth {
+      font-size: 14px;
+      color: #fff;
+      font-weight: bold;
+    }
+    &__dayweek {
+      color: #cf4f1b;
+      font-size: 10px;
+    }
+    &__bottom {
+      position: absolute;
+      bottom: 0%;
+      left: 0;
+      padding: 0 0 9.2px 11.7px;
+    }
+    &__title {
+      color: #fff;
+      font-weight: bold;
+    }
+    &__subtitle {
+      color: #fff;
+    }
+  }
+}

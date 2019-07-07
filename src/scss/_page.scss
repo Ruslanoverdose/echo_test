@@ -1,19 +1,21 @@
 html,
 body,
 .main {
-  height: 100%;
 }
 html {
 }
-body {
+.body_1 {
   background: $background;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
+.body_2 {
+  background: #333;
+}
 .content {
-  position: absolute;
-  left: 246px;
+  flex: auto;
+  padding-right: 78px;
   &__banner {
     background: $eventsBack;
     padding: 29px 28px 16px 26px;
@@ -40,8 +42,30 @@ body {
       }
     }
   }
+  &__wrapper {
+    padding-left: 55px;
+    padding-top: 52px;
+    .breadcrumb {
+      font-family: "Heading Pro Trial", sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+      &-item {
+        a {
+          color: $silver;
+        }
+      }
+      .active {
+        color: #fff;
+      }
+    }
+  }
 }
 .wrapper {
   display: flex;
   height: 100%;
+}
+
+.arrow__filter {
+  background: url("../../images/arrow_filter.svg") no-repeat;
+  width: 100%;
 }

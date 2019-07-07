@@ -1,0 +1,62 @@
+.map {
+  &__menu {
+    list-style: none;
+    padding-left: 0;
+    & > li {
+      display: inline-block;
+      margin-right: 12px;
+      button {
+        outline: none;
+      }
+
+      .active {
+        color: $black_4;
+        background: $silver_2;
+      }
+    }
+  }
+  .pietura {
+    font-family: $Roboto_C;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 49px;
+    span {
+      margin-right: 17px;
+    }
+    button {
+      margin-right: 12px;
+    }
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    .building {
+      font-family: "Oswald", sans-serif;
+      color: $FE;
+      &__title {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+      &__list {
+        padding-left: 6px;
+        list-style: none;
+        font-size: 16px;
+        font-weight: 500;
+        & > li {
+          position: relative;
+          line-height: 30px;
+          &::before {
+            content: "•";
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            left: -14px;
+          }
+        }
+      }
+    }
+  }
+}
