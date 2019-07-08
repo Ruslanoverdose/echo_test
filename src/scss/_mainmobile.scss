@@ -1,0 +1,139 @@
+.mobile-main {
+  position: relative;
+  height: 100vh;
+  overflow: auto;
+
+  &__wrapper {
+    padding: 0 15px;
+  }
+  &__top {
+    display: flex;
+    padding: 15px 0;
+    justify-content: space-between;
+    .logo_mobile {
+    }
+    .bar {
+      img {
+        width: 24px;
+      }
+      button {
+        background: transparent;
+        border: 0;
+      }
+    }
+  }
+  &__items {
+  }
+  &__item {
+    text-align: center;
+    padding: 11px 0;
+    background: rgba($orange, 0.25);
+    font-family: $Roboto_C;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    a {
+      color: #fff;
+    }
+  }
+  &__events {
+    &__top {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 14px;
+    }
+    &__question {
+      font-size: 15px;
+      & > img {
+        margin-right: 11px;
+      }
+      a {
+        color: $orange;
+        text-decoration: underline;
+      }
+    }
+    &__title {
+      color: #fff;
+      font-weight: bold;
+      font-family: $Oswald;
+    }
+  }
+  .tagline_mobile {
+    font-family: $Oswald;
+    color: #fff;
+    p {
+      margin: 0;
+      &:first-child {
+        font-weight: 300;
+      }
+      &:last-child {
+        font-weight: 500;
+      }
+    }
+  }
+  &__navigation {
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: #333;
+    .sidebar {
+      overflow: auto;
+    }
+    .bottom {
+      margin-top: 50px;
+      &__menu {
+        margin-bottom: 20px;
+      }
+      &__social {
+        font-family: "Oswald", sans-serif;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        li {
+          list-style: none;
+          margin-right: 38px;
+          color: #fff;
+          font-weight: 300;
+          font-size: 18px;
+          a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) {
+  .tagline_mobile {
+    p {
+      font-size: 30px;
+    }
+  }
+  .mobile-main {
+    display: block;
+  }
+}
+@media (min-width: 360px) {
+  .tagline_mobile {
+    p {
+      font-size: 34px;
+    }
+  }
+}
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+  .mobile-main {
+    display: none;
+  }
+}
+@media (min-width: 991px) {
+}

@@ -7,9 +7,6 @@
   font-weight: bold;
   color: $silver_2;
   transition: 0.3s all;
-  span {
-    padding: 0 27px;
-  }
   &:hover {
     color: $black_4;
     background: $silver_2;
@@ -31,4 +28,37 @@
   font-size: 14px;
   font-weight: bold;
   text-align: center;
+}
+
+.btn-filter {
+  cursor: pointer;
+}
+
+@media (min-width: 320px) {
+  .btn-map {
+    font-size: 14px;
+    span {
+      padding: 0 14px;
+    }
+  }
+}
+@media (min-width: 360px) {
+  .btn-map {
+    font-size: 14px;
+    span {
+      padding: 0 20px;
+    }
+  }
+}
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+  .btn-map {
+    font-size: 16px;
+    span {
+      padding: 0 27px;
+    }
+  }
+}
+@media (min-width: 991px) {
 }

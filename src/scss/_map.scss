@@ -21,7 +21,6 @@
     color: #fff;
     display: flex;
     align-items: center;
-    margin-bottom: 49px;
     span {
       margin-right: 17px;
     }
@@ -32,9 +31,25 @@
   &__content {
     display: flex;
     justify-content: space-between;
+    &__information {
+      width: 100%;
+    }
     .building {
-      font-family: "Oswald", sans-serif;
+      font-family: $Oswald;
       color: $FE;
+      select {
+        width: 100%;
+        background: #434343;
+        padding: 11px 0;
+        text-align: center;
+        font-weight: 500;
+        color: #fff;
+        border-color: #434343;
+        text-align-last: center;
+        option {
+          text-align: center;
+        }
+      }
       &__title {
         font-size: 24px;
         font-weight: 500;
@@ -59,4 +74,36 @@
       }
     }
   }
+}
+
+@media (min-width: 320px) {
+  .map {
+    &__content {
+      flex-wrap: wrap;
+      &__pic {
+        img {
+          width: 104%;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+  .map {
+    .pietura {
+      margin-bottom: 49px;
+    }
+    &__content {
+      flex-wrap: nowrap;
+      &__pic {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 991px) {
 }

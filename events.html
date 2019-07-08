@@ -13,7 +13,7 @@
       <div class="wrapper">
         <aside class="sidebar">
           <div class="top">
-            <div class="top__logo">
+            <div class="top__logo arrow">
               <a href="index.html">
                 <img src="/images/logo.png" alt="Logo company" />
               </a>
@@ -21,39 +21,45 @@
             <!-- /.top__logo -->
             <ul class="top__menu navbar-nav">
               <li class="nav-item">
-                <a class="nav-link link-item" href="#">TELPAS BIZNESAM</a>
-                <ul class="submenu navbar-nav">
+                <a class="nav-link link-item arrow" href="#">TELPAS BIZNESAM</a>
+                <ul class="submenu navbar-nav submenu_nav">
                   <li class="nav-item">
-                    <a class="nav-link link-item" href="#"
+                    <a class="nav-link link-item arrow" href="#"
                       >BĒRZAUNES IELA 11 A</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link link-item" href="#">BĒRZAUNES IELA 6</a>
+                    <a class="nav-link link-item arrow" href="#"
+                      >BĒRZAUNES IELA 6</a
+                    >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link link-item" href="#">ŪNIJAS IELA 8</a>
+                    <a class="nav-link link-item arrow" href="#"
+                      >ŪNIJAS IELA 8</a
+                    >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link link-item" href="#">IERIĶU IELA 5A</a>
+                    <a class="nav-link link-item arrow" href="#"
+                      >IERIĶU IELA 5A</a
+                    >
                   </li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link link-item">
+                <a href="#" class="nav-link link-item arrow">
                   TELPAS PASĀKUMIEM
                 </a>
-                <ul class="submenu navbar-nav">
+                <ul class="submenu navbar-nav submenu_nav">
                   <li class="nav-item">
-                    <a href="#" class="nav-link link-item"
+                    <a href="#" class="nav-link link-item arrow"
                       >KULTŪRVIETA SPĪDOLA</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link link-item">PROMENĀDE</a>
+                    <a href="#" class="nav-link link-item arrow">PROMENĀDE</a>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link link-item">VASARNĪCA</a>
+                    <a href="#" class="nav-link link-item arrow">VASARNĪCA</a>
                   </li>
                 </ul>
               </li>
@@ -64,15 +70,17 @@
           <div class="bottom">
             <ul class="bottom__menu navbar-nav">
               <li class="nav-item">
-                <a class="nav-link link-item" href="#">PASĀKUMU KALENDĀRS</a>
+                <a class="nav-link link-item arrow" href="#"
+                  >PASĀKUMU KALENDĀRS</a
+                >
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link link-item">
+                <a href="#" class="nav-link link-item arrow">
                   KONTAKTI
                 </a>
               </li>
               <li class="nav-item">
-                <a href="map.html" class="nav-link pb-0">
+                <a href="map.html" class="nav-link pb0_nav">
                   KARTE
                   <img src="/images/map.png" alt="" class="link-img" />
                 </a>
@@ -124,7 +132,7 @@
               </div>
               <div class="events__content">
                 <div class="row row_events">
-                  <div class="col-md-4 cardcontainer">
+                  <div class="col-md-6 col-lg-4 cardcontainer">
                     <div
                       class="eventcard"
                       data-toggle="modal"
@@ -145,7 +153,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4 cardcontainer">
+                  <div class="col-md-6 col-lg-4 cardcontainer">
                     <div class="eventcard">
                       <div class="eventcard__cover">
                         <img src="/images/eventpic.png" alt="" />
@@ -162,7 +170,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4 cardcontainer">
+                  <div class="col-md-6 col-lg-4 cardcontainer">
                     <div class="eventcard">
                       <div class="eventcard__cover">
                         <img src="/images/eventpic.png" alt="" />
@@ -179,7 +187,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4 cardcontainer">
+                  <div class="col-md-6 col-lg-4 cardcontainer">
                     <div class="eventcard">
                       <div class="eventcard__cover">
                         <img src="/images/eventpic.png" alt="" />
@@ -205,13 +213,253 @@
       <!-- /.wrapper -->
     </main>
     <!-- /.main -->
-    <!-- Modal -->
+    <div class="mobile-main">
+      <div class="mobile-main__wrapper">
+        <div class="mobile-main__top">
+          <div class="logo_mobile">
+            <img src="/images/logo.png" alt="" />
+          </div>
+          <div class="bar">
+            <button>
+              <img src="/images/bar.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <!-- /.top -->
+        <div class="mobile-main_content">
+          <div class="content__wrapper">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb bg-transparent pt-0 pl-0 pb-0">
+                <li class="breadcrumb-item"><a href="#">SĀKUMS</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  PASĀKUMU KALENDĀRS
+                </li>
+              </ol>
+            </nav>
+            <div class="events">
+              <div class="events__top">
+                <div class="events__title">
+                  Piektdiena, 8.Marts
+                </div>
+                <div class="events__gallery">
+                  <div class="events__filterButton">
+                    <button class="btn-clear btn-filter">
+                      <img src="/images/filter.png" alt="" />
+                    </button>
+                    <div class="events__filter filter_mobile closed">
+                      <div class="filter_container">
+                        <div class="filter_block">
+                          <div class="events__filter__type row">
+                            <div class="events__filter__title col-md-1">
+                              VEIDS
+                            </div>
+                            <ul class="events__filter__value col-md-11">
+                              <li><button>Visi</button></li>
+                              <li><button>Izstādes</button></li>
+                              <li><button>Ēdiena festivāli</button></li>
+                              <li><button>Mūzikas pasākumi</button></li>
+                            </ul>
+                          </div>
+                          <div class="events__filter__date row">
+                            <div class="events__filter__title col-md-1">
+                              DATUMS
+                            </div>
+                            <ul class="events__filter__value col-md-11">
+                              <li><button>Visi</button></li>
+                              <li><button>Šodien</button></li>
+                              <li><button>Šonedēļ</button></li>
+                              <li><button>Šomēness</button></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#">Bilžu galerija</a>
+                </div>
+              </div>
+
+              <div class="events__content">
+                <div class="row_events">
+                  <div class="cardcontainer">
+                    <div
+                      class="eventcard"
+                      data-toggle="modal"
+                      data-target="#exampleModal"
+                    >
+                      <div class="eventcard__cover">
+                        <img src="/images/eventpic.png" alt="" />
+                      </div>
+                      <div class="eventcard__date">
+                        <div class="eventcard__daymonth">12/03</div>
+                        <div class="eventcard__dayweek">Piektdiena</div>
+                      </div>
+                      <div class="eventcard__bottom">
+                        <div class="eventcard__title">
+                          VEF kvartāla atklāšana
+                        </div>
+                        <div class="eventcard__subtitle">Promenāde</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cardcontainer">
+                    <div class="eventcard">
+                      <div class="eventcard__cover">
+                        <img src="/images/eventpic.png" alt="" />
+                      </div>
+                      <div class="eventcard__date">
+                        <div class="eventcard__daymonth">12/03</div>
+                        <div class="eventcard__dayweek">Piektdiena</div>
+                      </div>
+                      <div class="eventcard__bottom">
+                        <div class="eventcard__title">
+                          VEF kvartāla atklāšana
+                        </div>
+                        <div class="eventcard__subtitle">Promenāde</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cardcontainer">
+                    <div class="eventcard">
+                      <div class="eventcard__cover">
+                        <img src="/images/eventpic.png" alt="" />
+                      </div>
+                      <div class="eventcard__date">
+                        <div class="eventcard__daymonth">12/03</div>
+                        <div class="eventcard__dayweek">Piektdiena</div>
+                      </div>
+                      <div class="eventcard__bottom">
+                        <div class="eventcard__title">
+                          VEF kvartāla atklāšana
+                        </div>
+                        <div class="eventcard__subtitle">Promenāde</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cardcontainer">
+                    <div class="eventcard">
+                      <div class="eventcard__cover">
+                        <img src="/images/eventpic.png" alt="" />
+                      </div>
+                      <div class="eventcard__date">
+                        <div class="eventcard__daymonth">12/03</div>
+                        <div class="eventcard__dayweek">Piektdiena</div>
+                      </div>
+                      <div class="eventcard__bottom">
+                        <div class="eventcard__title">
+                          VEF kvartāla atklāšana
+                        </div>
+                        <div class="eventcard__subtitle">Promenāde</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.mobile_content -->
+      </div>
+      <div class="mobile-main__navigation closed">
+        <aside class="sidebar">
+          <div class="top">
+            <div class="top__logo">
+              <a href="index.html">
+                <img src="/images/logo.png" alt="Logo company" />
+              </a>
+              <button class="close_menu">
+                <img src="/images/x.png" alt="" />
+              </button>
+            </div>
+            <!-- /.top__logo -->
+            <ul class="top__menu navbar-nav arrow-up">
+              <li class="nav-item">
+                <a class="nav-link link-item arrow" href="#">TELPAS BIZNESAM</a>
+                <ul class="submenu navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link link-item arrow" href="#"
+                      >BĒRZAUNES IELA 11 A</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link link-item arrow" href="#"
+                      >BĒRZAUNES IELA 6</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link link-item arrow" href="#"
+                      >ŪNIJAS IELA 8</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link link-item arrow" href="#"
+                      >IERIĶU IELA 5A</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link link-item arrow">
+                  TELPAS PASĀKUMIEM
+                </a>
+                <ul class="submenu navbar-nav">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link link-item arrow"
+                      >KULTŪRVIETA SPĪDOLA</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link link-item arrow">PROMENĀDE</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link link-item arrow">VASARNĪCA</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <!-- /.sidebar__menu -->
+          </div>
+          <!-- /.top -->
+          <div class="bottom arrow-up">
+            <ul class="bottom__menu navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link link-item arrow " href="#"
+                  >PASĀKUMU KALENDĀRS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link link-item arrow">
+                  KONTAKTI
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="map.html" class="nav-link link-item arrow">
+                  KARTE
+                </a>
+              </li>
+            </ul>
+            <ul class="bottom__social">
+              <li>VALODA: <a href="">LV</a></li>
+              <li>
+                <a href=""><img src="/images/facebook.svg" alt=""/></a>
+              </li>
+              <li>
+                <a href=""><img src="/images/instagram.svg" alt=""/></a>
+              </li>
+            </ul>
+            <!-- /.bottom_menu  -->
+          </div>
+          <!-- /.bottom -->
+        </aside>
+        <!-- /.sidebar -->
+      </div>
+    </div>
+    <!-- /.mobile-main -->
     <div
       class="modal fade modal-custom "
       id="exampleModal"
       tabindex="-1"
       role="dialog"
-      aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
       <div
@@ -282,6 +530,8 @@
         </div>
       </div>
     </div>
+    <!-- Modal -->
+
     <script src="/libs/js/jquery.min.js"></script>
     <script src="/libs/js/bootstrap.min.js"></script>
     <script src="/build/js/scripts-min.js"></script>

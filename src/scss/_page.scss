@@ -9,13 +9,13 @@ html {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  background-position: center;
 }
 .body_2 {
   background: #333;
 }
 .content {
   flex: auto;
-  padding-right: 78px;
   &__banner {
     background: $eventsBack;
     padding: 29px 28px 16px 26px;
@@ -43,8 +43,6 @@ html {
     }
   }
   &__wrapper {
-    padding-left: 55px;
-    padding-top: 52px;
     .breadcrumb {
       font-family: "Heading Pro Trial", sans-serif;
       font-size: 18px;
@@ -68,4 +66,59 @@ html {
 .arrow__filter {
   background: url("../../images/arrow_filter.svg") no-repeat;
   width: 100%;
+}
+.opened {
+  display: block;
+}
+.closed {
+  display: none;
+}
+@media (min-width: 320px) {
+  .main {
+    display: none;
+  }
+  .main-mobile {
+    display: block;
+  }
+  .content {
+    &__wrapper {
+    }
+  }
+}
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+  .main {
+    display: block;
+  }
+  .main-mobile {
+    display: none;
+  }
+  .content {
+    &__banner {
+      img {
+        width: 284px;
+      }
+    }
+  }
+  .breadcrumb {
+    padding-top: 20px;
+  }
+}
+@media (min-width: 1100px) {
+  .breadcrumb {
+    padding-top: 0;
+  }
+  .content {
+    padding-right: 78px;
+    &__wrapper {
+      padding-left: 55px;
+      padding-top: 52px;
+    }
+    &__banner {
+      img {
+        width: auto;
+      }
+    }
+  }
 }

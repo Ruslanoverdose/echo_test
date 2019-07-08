@@ -1,5 +1,4 @@
 .is_open {
-  max-width: 320px;
   transition: 0.5s max-width;
   .eventsbar__content {
     opacity: 1;
@@ -112,5 +111,16 @@
       transition: 0.3s transform;
       transform: rotate(-180deg);
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .is_open {
+    max-width: 232px;
+  }
+}
+@media (min-width: 991px) {
+  .is_open {
+    max-width: 320px;
   }
 }

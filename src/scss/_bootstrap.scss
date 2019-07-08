@@ -24,5 +24,20 @@
   &__col {
     padding-left: 10px;
     padding-right: 10px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 320px) {
+  .card-body-custom {
+    margin-top: 20px;
+    padding: 0rem;
+  }
+}
+@media (min-width: 768px) {
+  .card-body-custom {
+    padding: 1.25rem;
   }
 }
